@@ -1,0 +1,35 @@
+import turtle
+def multicolor(animal,size):
+    for color in["red","hotpink","purple","black"]:
+        animal.color(color)
+        animal.forward(size)
+        animal.left(100)
+window=turtle.Screen()
+window.bgcolor("lightgreen")
+tess=turtle.Turtle()
+tess.speed(7)
+tess.pensize(7)
+size=20
+for i in range(7):
+    multicolor(tess,size)
+    size+=10
+    tess.forward(15)
+    tess.right(15)
+    tess.circle(15)
+    tess.circle(7)
+for i in range(15):
+    multicolor(tess,size)
+    size+=10
+    tess.forward(10)
+    tess.right(18)
+    tess.circle(15)
+    tess.circle(7)
+for i in range(15):
+    multicolor(tess,size)
+    size+=10
+    tess.forward(10)
+    tess.right(18)
+    tess.circle(15)
+    tess.circle(7)
+window.mainloop()
+        
